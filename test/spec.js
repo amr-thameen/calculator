@@ -1,5 +1,5 @@
 const expect = require('chai').expect;
-const calculator = require('../calculator')
+const {calculator, add} = require('../calculator')
 
 
 
@@ -18,3 +18,11 @@ describe('calculator',()=> {
     });
 
 })
+
+describe('adding',()=>{
+    it('adds 1 and 1', ()=>{
+        expect(add(1,1)).to.eql(2);
+    })
+})
+
+

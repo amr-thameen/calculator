@@ -13,11 +13,16 @@ if (operation === 'mult'){
 if (operation === 'sub'){
     result = a-b;
 };
-console.log(result)
 return result;
 }
 
 
+const add = (a,b)=>{
+    return a+b;
+}
 
 
-module.exports = calculator;
+
+module.exports = {
+    calculator,
+    add}
